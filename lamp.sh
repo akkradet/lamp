@@ -3,7 +3,7 @@ echo "===== LAMP Install ====="
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
 yum -y install epel-release
 echo "Installing Apache..."
-yum -y install httpd expect
+yum -y install httpd
 systemctl start httpd.service
 systemctl enable httpd.service
 yum -y install mod_ssl
