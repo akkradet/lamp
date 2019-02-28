@@ -36,5 +36,3 @@ echo "Installing phpMyAdmin..."
 yum -y install phpMyAdmin
 curl -o /etc/httpd/conf.d/phpMyAdmin.conf https://raw.githubusercontent.com/akkradet/lamp/master/phpMyAdmin.conf
 systemctl restart httpd.service
-firewall-cmd --zone=public --add-port=80/tcp --permanent
-firewall-cmd --reload
