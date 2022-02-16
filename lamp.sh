@@ -20,7 +20,7 @@ echo "Installing PHP..."
 rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum -y install yum-utils
 yum -y update
-yum-config-manager --enable remi-php73
+yum-config-manager --enable remi-php74
 yum -y install php php-opcache
 systemctl restart httpd.service
 echo "<?php phpinfo(); ?>" > /var/www/html/info.php
