@@ -5,3 +5,8 @@ setsebool -P httpd_can_network_connect_db on
 
 is_writable 
 chcon -R -t httpd_sys_rw_content_t /var/www/html/
+
+
+setsebool -P httpd_can_sendmail on
+setsebool -P httpd_can_network_connect_db 1
+setsebool -P httpd_can_network_connect 1
